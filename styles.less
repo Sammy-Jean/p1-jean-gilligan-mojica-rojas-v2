@@ -1,0 +1,77 @@
+@import "variables.less";
+
+/*  Header  */
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Nav Styling
+
+.navbar-custom {
+  background-color: @primary-color;
+  justify-content: space-around;
+  .nav-link {
+    color: @secondary-color;
+    justify-content: space-around;
+    font-size: @links-size;
+  }
+  .navbar-light .navbar-toggler {
+    color: @container-color;
+    border-color: @secondary-color;
+    .navbar-toggler-icon {
+      color: @secondary-color;
+    }
+  }
+}
+
+nav span {
+  font-family: "Roboto", sans-serif;
+  color: @highlight-color;
+  text-transform: uppercase;
+  font-weight: @font-weight;
+}
+
+.btn-primary:hover {
+  color: @highlight-color;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: @secondary-color;
+}
+
+// footer
+footer {
+  .black {
+    height: auto;
+    background-color: @secondary-color;
+    img {
+      height: 125px;
+    }
+  }
+}
+
+//  Image Styling
+
+// Container Styling
+
+// button styling
+.btn-primary {
+  color: @primary-color;
+  background-color: @secondary-color;
+  text-transform: uppercase;
+  font-weight: @font-weight;
+  border-radius: 8px;
+  border-color: @container-color;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: @primary-color;
+  border-color: @container-color; /*set the color you want here*/
+}
